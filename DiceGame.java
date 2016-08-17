@@ -10,12 +10,7 @@ The final 1 does NOT get included in the total.*/
 
 public class DiceGame {
 	
-	public void run(){
-		
-		System.out.printf("Your roll is %i");
-
-
-	}
+	
 	//we initialized 3 variables, min - max and totalRolls to keep track 
 	public static void main(String[] args) {
 		int min = 0;
@@ -32,7 +27,7 @@ public class DiceGame {
 			RollOnedie rollOneDie = new RollOnedie();
 			//initialize variable total and set it equal to the results of RollOneDie method
 			int total = rollOneDie.roll1die(rnd);
-			//
+			
 			if (min == 0 && total != 0){
 				min = total;
 			}
